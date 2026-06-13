@@ -3,29 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>VIBIST | Official Artist Press Kit</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
+scroll-behavior:smooth;
 }
 
 body{
 font-family:'Poppins',sans-serif;
-background:#080808;
-color:#fff;
+background:
+radial-gradient(circle at top,#2d2208 0%,#0a0a0a 45%,#000 100%);
+color:white;
 line-height:1.8;
+overflow-x:hidden;
 }
+
+/* HERO */
 
 .hero{
 height:100vh;
 background:
 linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),
-url("IMG_8041.jpg");
+url("IMG_8041.JPG");
 background-size:cover;
 background-position:center;
 display:flex;
@@ -35,121 +42,200 @@ text-align:center;
 padding:20px;
 }
 
+.hero-content{
+max-width:900px;
+}
+
 .hero-content h1{
-font-size:5rem;
-letter-spacing:8px;
+font-size:6rem;
+font-weight:800;
+letter-spacing:10px;
+text-transform:uppercase;
 }
 
 .hero-content p{
-font-size:1.2rem;
-opacity:.85;
-margin-top:10px;
+font-size:1.3rem;
+opacity:.9;
+margin-top:15px;
 }
 
 .btn{
 display:inline-block;
-margin-top:25px;
-padding:14px 32px;
-background:#fff;
+margin-top:30px;
+padding:15px 35px;
+background:linear-gradient(135deg,#d4af37,#f5d76e);
 color:#000;
 text-decoration:none;
-border-radius:40px;
-font-weight:600;
+border-radius:50px;
+font-weight:700;
+transition:.3s;
 }
 
+.btn:hover{
+transform:translateY(-3px);
+}
+
+/* GENERAL */
+
 section{
-max-width:1100px;
+max-width:1200px;
 margin:auto;
-padding:80px 20px;
+padding:90px 25px;
 }
 
 .section-title{
-font-size:2.2rem;
-margin-bottom:30px;
+font-size:2.5rem;
+margin-bottom:35px;
+font-weight:700;
+color:#f5d76e;
 }
+
+/* ABOUT */
 
 .about{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:50px;
+gap:60px;
 align-items:center;
 }
 
 .about img{
 width:100%;
-border-radius:20px;
+border-radius:25px;
+box-shadow:0 20px 50px rgba(0,0,0,.45);
 }
+
+.about-text{
+background:rgba(255,255,255,.04);
+backdrop-filter:blur(10px);
+padding:35px;
+border-radius:20px;
+border:1px solid rgba(255,255,255,.08);
+}
+
+/* MUSIC */
 
 .music-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:25px;
 }
 
 .song{
-background:#141414;
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(10px);
 padding:25px;
-border-radius:15px;
+border-radius:18px;
+border:1px solid rgba(255,255,255,.08);
 transition:.3s;
 }
 
 .song:hover{
-transform:translateY(-5px);
+transform:translateY(-8px);
 }
 
 .song h3{
+color:#f5d76e;
 margin-bottom:10px;
 }
+
+/* STATEMENT */
+
+.statement{
+background:rgba(255,255,255,.04);
+padding:40px;
+border-radius:20px;
+border:1px solid rgba(255,255,255,.08);
+font-size:1.1rem;
+}
+
+/* CONNECT */
 
 .links{
 display:flex;
 flex-wrap:wrap;
 gap:15px;
-margin-top:20px;
 }
 
 .links a{
-padding:12px 22px;
-background:#fff;
+padding:14px 25px;
+background:linear-gradient(135deg,#d4af37,#f5d76e);
 color:#000;
 text-decoration:none;
-border-radius:40px;
-font-weight:600;
+font-weight:700;
+border-radius:50px;
+transition:.3s;
 }
+
+.links a:hover{
+transform:translateY(-3px);
+}
+
+/* CONTACT */
 
 .contact{
 text-align:center;
+background:rgba(255,255,255,.04);
+border-radius:25px;
+padding:50px;
+border:1px solid rgba(255,255,255,.08);
 }
+
+.contact h3{
+margin-top:15px;
+color:#f5d76e;
+}
+
+/* FOOTER */
 
 footer{
 text-align:center;
 padding:40px;
 opacity:.6;
+font-size:.9rem;
 }
+
+/* MOBILE */
 
 @media(max-width:768px){
 
 .hero-content h1{
-font-size:3rem;
+font-size:3.5rem;
+letter-spacing:4px;
 }
 
 .about{
 grid-template-columns:1fr;
 }
 
+.section-title{
+font-size:2rem;
 }
+
+}
+
 </style>
 </head>
 
 <body>
 
+<!-- HERO -->
+
 <section class="hero">
+
 <div class="hero-content">
+
 <h1>VIBIST</h1>
+
 <p>Afrobeat • Afropop • Afro-R&B</p>
+
 <a href="#contact" class="btn">BOOKINGS</a>
+
 </div>
+
 </section>
+
+<!-- ABOUT -->
 
 <section>
 
@@ -157,9 +243,9 @@ grid-template-columns:1fr;
 
 <div class="about">
 
-<img src="YOUR_FRONT_FACING_IMAGE.jpg" alt="Vibist">
+<img src="IMG_8042.JPG" alt="Vibist">
 
-<div>
+<div class="about-text">
 
 <p>
 Vibist is an emerging Afrobeat artist whose music blends
@@ -185,6 +271,8 @@ ends.
 </div>
 
 </section>
+
+<!-- SONGS -->
 
 <section>
 
@@ -216,9 +304,13 @@ ends.
 
 </section>
 
+<!-- STATEMENT -->
+
 <section>
 
 <h2 class="section-title">Artist Statement</h2>
+
+<div class="statement">
 
 <p>
 “I make music for people who feel deeply.
@@ -228,7 +320,11 @@ My goal is to create timeless music that connects
 with people regardless of where they come from.”
 </p>
 
+</div>
+
 </section>
+
+<!-- CONNECT -->
 
 <section>
 
@@ -252,7 +348,11 @@ TikTok
 
 </section>
 
-<section id="contact" class="contact">
+<!-- CONTACT -->
+
+<section id="contact">
+
+<div class="contact">
 
 <h2 class="section-title">Bookings & Business</h2>
 
@@ -261,9 +361,9 @@ For performances, interviews, collaborations,
 and business opportunities:
 </p>
 
-<br>
-
 <h3>vibistt@email.com</h3>
+
+</div>
 
 </section>
 
